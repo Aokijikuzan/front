@@ -8,48 +8,80 @@
   </head>
       
   <body>
+    <h1> Formulaire d'inscription</h1>
+    <br/>
     <form action="" method="post">
         <div>
-          <label>Entrez le nom:</label>
-          <input type="text" name="nom" id="nom">
+          <label>Entrez le nom :</label>
+          <input type="text" name="nom" id="nom" pattern="[A-Z]" autofocus autocomplete="off" 
+           required/>
         </div>
         <div>
           <label>Entrez le prénom:</label>
-           <input type="text" name="prenom" id="prenom">
+           <input type="text" name="prenom" id="prenom"  autocomplete="off" required/>
         </div>
-
+        <br/>
+        <hr>
         <div>
           <label>Entrez la date de naissance:</label>
             <input type="date" id="naissance" name="naissance"
-               value="2018-07-22"
-               min="1950-01-01" max="2999-12-31" />
+               value="1991-07-22"
+               min="1950-01-01" max="2999-12-31" required/>
         </div>
           <label>Entrez l'adresse mail:</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="mail" id="mail" required/>
         </div>
-
+        <br/>
+        <hr>
         <div>
           <label>Entrez le numero de téléphone:</label>
           <input type="tel" id="phone" name="phone"
-           placeholder="123-456-7890"
-           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           placeholder="06 31 35 58 65"
+           pattern="[0-9]{10}"
            required />
         </div>
         <div>
-          <label>Choisissez la préférence de contact :</label>
+          <p>Choisissez la préférence de contact :</p>
+          <div>
+            <input type="radio" name="phone" value="phone">
+            <label for="phone">téléphone</label>
+          </div>
+           <input type="radio" name="mail" value="mail">
+           <label for="mail">adresse mail</label>
         </div>
 
         <div>
           <label>Choisissez le ou les service(s) à souscrire:</label>
+          <br/>
+
+          <div>
+            <input type="checkbox" id="service" name="service"
+            value ="services" checked/>
+            <label for="animations">Animation</label>
+          </div>
+          <div>
+            <input type="checkbox" id="service" name="service"
+            value ="services" />
+            <label for="spectacle">Spectacles</label>
+          </div>
+          <div>
+            <input type="checkbox" id="service" name="service"
+            value ="services" />
+            <label for="emprunt_illimite">Emprunt illimités</label>
+          </div>
         </div>
+        <br/>
+        <hr>
+        
         <div>
           <label>Entrer le code parrain  :</label>
+          <input type="text" name="code" />
         </div>
 
         <label>Pays</label>:
-        <select>
-          <optgroup label="Europe">
-            <option>Fancze</option>
+        <select required>
+          <optgroup label="Europe" selected="selected">
+            <option>Fance</option>
             <option>Suisse</option>
             <option>Belgique</option>
             <option>Espagne</option>
@@ -79,6 +111,8 @@
             <option></option>
           </optgroup>
         </select>
+        <br/>
+        <input type="submit" name="envoyer">
       </form>
   </body>
 </html>
