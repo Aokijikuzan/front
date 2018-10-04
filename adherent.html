@@ -4,10 +4,81 @@
 <html lang= "fr">
   <head>
     <meta charset="utf-8">
-   <title></title>
+   <title>Formulaire D'inscription</title>
   </head>
-
+      
   <body>
-    
+    <form action="" method="post">
+        <div>
+          <label>Entrez le nom:</label>
+          <input type="text" name="nom" id="nom">
+        </div>
+        <div>
+          <label>Entrez le prénom:</label>
+           <input type="text" name="prenom" id="prenom">
+        </div>
+
+        <div>
+          <label>Entrez la date de naissance:</label>
+            <input type="date" id="naissance" name="naissance"
+               value="2018-07-22"
+               min="1950-01-01" max="2999-12-31" />
+        </div>
+          <label>Entrez l'adresse mail:</label>
+          <input type="email" name="mail" id="mail">
+        </div>
+
+        <div>
+          <label>Entrez le numero de téléphone:</label>
+          <input type="tel" id="phone" name="phone"
+           placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required />
+        </div>
+        <div>
+          <label>Choisissez la préférence de contact :</label>
+        </div>
+
+        <div>
+          <label>Choisissez le ou les service(s) à souscrire:</label>
+        </div>
+        <div>
+          <label>Entrer le code parrain  :</label>
+        </div>
+
+        <label>Pays</label>:
+        <select>
+          <optgroup label="Europe">
+            <option>Fancze</option>
+            <option>Suisse</option>
+            <option>Belgique</option>
+            <option>Espagne</option>
+          </optgroup>
+         <optgroup label="Afrique">
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </optgroup>
+           <optgroup label="Amérique">
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </optgroup>
+           <optgroup label="Asie">
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </optgroup>
+           <optgroup label="Océanie">
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </optgroup>
+        </select>
+      </form>
   </body>
 </html>
