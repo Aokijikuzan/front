@@ -1,0 +1,78 @@
+h1
+{
+  font-style:italic;
+  
+}
+.main h1
+{
+  color :magenta;
+}
+body
+{
+  text-decoration : underline;
+}
+.hide
+{
+  visibility:hidden;
+}
+article > p
+{
+  background:grey ;
+}
+
+.main p:nth-child(2),.main :last-child
+{
+  font-style:italic;
+}
+p::first-letter
+{
+  color:blue;
+}
+
+div > span:nth-child(5)
+{
+  color: green;
+}
+
+div > p:nth-child(2) > span
+{
+ font-size:10px;
+  
+}
+.inscription :last-child
+{
+  border-style: dotted;
+  border-color: blue;
+}
+h1:hover
+{
+  color: yellow;
+}
+body:empty
+{
+  margin-top: 150px;
+  margin-bottom:50px;
+}
+/*
+écrire tous les titres en lettre capitale
+écrire uniquement le titre de l'article en magenta
+
+tout souligner
+centrer le paragraphe P1
+
+mettre les paragraphes de l'article en fond gris
+mettre les paragraphes qui contiennent "Entete" et "Pied de page" en italique
+mettre la première lettre de chaque paragraphe en bleu
+
+ne pas afficher le dernier paragraphe P4 
+appliquer une marge haut et bas de 30px sur les paragraphes du contenu secondaire
+afficher en plus petit le span donnant des précisions dans le paragraphe P2
+
+changer le type de puce de la liste "funky"
+alterner les couleurs de chaque élément de la liste
+
+afficher les étoiles *** en vert
+au focus sur le champ nom, mettre une bordure bleu en pointillé
+mettre une couleur au survol des titres
+mettre 50px de marge avant et après la ligne <hr /> sans utiliser le ciblage direct de la balise hr
+*/

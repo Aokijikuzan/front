@@ -16,6 +16,8 @@
           <input type="text" name="nom" id="nom" pattern="[A-Z]" autofocus autocomplete="off" title="le nom doit etre en majuscule"
            required/>
         </div>
+        <br/>
+        <br/>
         <div>
           <label>Entrez le prénom:</label>
            <input type="text" name="prenom" id="prenom"  autocomplete="off" 
@@ -23,18 +25,23 @@
            required/>
         </div>
         <br/>
-        <hr>
+        <br/>
         <div>
           <label>Entrez la date de naissance:</label>
             <input type="date" id="naissance" name="naissance"
                value="1991-07-22"
                min="1950-01-01" max="2999-12-31" required/>
         </div>
+        <br/>
+        <br/>
+        <hr>
+        <div>
           <label>Entrez l'adresse mail:</label>
           <input type="email" name="mail" id="mail" 
           pattern=".+@+."
           required/>
         </div>
+        <br/>
         <br/>
         <hr>
         <div>
@@ -50,9 +57,10 @@
             <input type="radio" name="phone" value="phone">
             <label for="phone">téléphone</label>
           </div>
-           <input type="radio" name="mail" value="mail">
-           <label for="mail">adresse mail</label>
-        </div>
+          <div>
+             <input type="radio" name="mail" value="mail">
+             <label for="mail">adresse mail</label>
+          </div>
 
         <div>
           <label>Choisissez le ou les service(s) à souscrire:</label>
@@ -79,9 +87,10 @@
         
         <div>
           <label>Entrer le code parrain  :</label>
-          <input type="text" name="code" />
+          <input type="text" name="code" pattern="[0-9]" />
         </div>
-
+        <br/>
+        <br/>
         <label>Pays</label>:
         <select required>
           <optgroup label="Europe" selected="selected">
@@ -115,6 +124,13 @@
             <option></option>
           </optgroup>
         </select>
+        <br/>
+        <br/>
+        <div>
+          <label>VIP  :</label>
+          <input type="text" name="vip" placeholder="false" />
+        </div>
+        <br/>
         <br/>
         <input type="submit" name="envoyer">
       </form>
