@@ -1,25 +1,51 @@
-
-.newsSorties > div > p
+.one_piece
 {
+	float:left;
+}
+.one_piece +div
+{
+	float: left;
+}
+.tete_menu
+{
+	display:block;
 	text-align: center;
-	overflow: hidden;
-	text-overflow: ellipsis;
-/*	white-space: normal;
-*/	
+	border-style: double;
+	vertical-align: baseline;
+
+}
+.tete_menu > ul, .tete_menu > ol
+{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.tete_menu > ul >li
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+}
+.masiko >img
+{
+	float: left;
+}
+.masiko >p
+{
+	justify-content: center;
+}
+.sec1, .sec2 , .sec3 , .sec4
+{
+	float : left;
+	margin-left: 170px;
+	
+	justify-content: space-between;
+}
+.sec4
+{
+	justify-content: space-around;
 }
 
-.element_menu >h3, aside >h3
-{
-	
-	 text-align: center;
-}
-.emprunt
-{
-	
-	margin-right:50%;
-	text-align: center;
-	margin: 0 auto;
-}
 /*
 @media screen and (max-width: 1080px)
 {

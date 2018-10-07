@@ -3,8 +3,9 @@ body
 	background-color: grey;
 	position:relative ;
 	width:auto;
-	margin:0;
-	padding:0;
+	margin:auto;
+	padding:5px;
+	padding-top:0px;
 }
 #menu 
 {
@@ -17,7 +18,7 @@ body
 .princip
 {
 	float : 0;
-	margin-left: 200px;
+	margin-left: 170px;
 	border:1px solid black;
 	justify-content: space-between;
 }
@@ -37,4 +38,24 @@ body
 img
 {
 	max-width: 100%;
+}
+.newsSorties > div > p
+{
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+
+.element_menu >h3, aside >h3
+{
+	
+	 text-align: center;
+}
+.emprunt
+{
+
+	margin-right:50%;
+	text-align: center;
+	margin: 0 auto;
 }
