@@ -1,31 +1,40 @@
 body
 {
-background-color: grey;
-position:relative ;
+	background-color: grey;
+	position:relative ;
+	width:auto;
+	margin:0;
+	padding:0;
 }
 #menu 
 {
-left:1;
-
-
+	float: left;
+	width: 150px;
+	border: 1px solid black;
+	display: inline-block;
+ 
 }
 .princip
 {
-right:1;
+	float : 0;
+	margin-left: 200px;
+	border:1px solid black;
+	justify-content: space-between;
 }
 .newsSorties 
 {
-clear: both;
-display: table;
+	display: flex;
+	text-align: center;
+	clear: both;
+	justify-content: space-around;
 }
 
-.newSorties > span
-{
-	float:left;
-	width: 33.33%;
-	padding: 50 px;
-}
 *
 {
 	box-sizing: border-box;
+}
+
+img
+{
+	max-width: 100%;
 }

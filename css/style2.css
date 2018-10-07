@@ -1,0 +1,44 @@
+
+.newsSorties > div > p
+{
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+/*	white-space: normal;
+*/	
+}
+
+.element_menu >h3, aside >h3
+{
+	
+	 text-align: center;
+}
+.emprunt
+{
+	
+	margin-right:50%;
+	text-align: center;
+	margin: 0 auto;
+}
+/*
+@media screen and (max-width: 1080px)
+{
+
+	[class*="im-"]
+	{
+		width:100%;
+		height: auto;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 600px)
+{
+ 
+ *{
+ 	box-sizing: border-box;
+ }
+
+
+}
