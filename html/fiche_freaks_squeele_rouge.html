@@ -1,46 +1,96 @@
-
 <!DOCTYPE html>
 <html lang= "fr">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet"  href=".\..\css\style2.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 	<link rel="stylesheet"  href=".\..\css\style1.css" />
+	<link rel="stylesheet"  href=".\..\css\style2.css" />
+
+
 </head>
 
 <body>
-	<nav class="tete_menu">
-		<h1> Mediatheque </h1>
-		<ul>
-			<li><a href=".\..\discoveryManga.html"> Discorevery</a></li>
-			<li>
-				<a href="">MarinFord</a>
-			</li>
-			<li>Recherche<input type="text" name="manga_search" autocomplete="off" spellcheck="false"/><input type="submit" value=""></li>
-		</ul>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="./../html/index.html">Acceuil <span class="sr-only">(current)</span></a></li>
+					<li><a href="./../html/index.html">Acceuil</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
 	</nav>
-	<nav id="menu">
-		<div class="element_menu">
+	<div class="row">
+		<div class=" col-xs-12  col-sm-4 col-md-2 col-lg-2 menu">
 			<h3>navigation</h3>
 			<ul>
 				<li><a href=".\..\html\adherent.html">inscrire un adherent</a></li>
-				<li><a href=".\..\html\objet.html">l'empire ecarlate</a></li>
-				<li><a href=".\..\html\index.html"> acceuil</a></li>
+				<li><a href=".\..\html\index.html">Acceuil</a></li>
+				<li><a href=""></a></li>
 			</ul>
-		</div> 
-	</nav>
-	<section class= "princip">
-		<div class="rouge">
-			<span>auteur: Florent Maudoux</span><br/>
-			<span>Editeur: Ankama</span><br/>
-			<span>Collection: Freaks' Squeele</span><br/>
-			<span>Genre: Bande dessinée (proche du manga)</span>
-			<p>
-				<img src=".\..\Image\freaks_squeele_rouge_tome1.jpg" title="Freaks' Squeele" alt="Rouge">
-
-				<span>Résumé</span>
-				Rouge est la première série issue de l’univers<strong>Freaks’ Squeele</strong>. On y découvre la jeune <strong>Xiong Mao</strong>, alors adolescente, dans un long périple vers l’âge adulte qui l’amènera à affronter ses camarades de classe,<br/>mais aussi ses professeurs. Un chemin semé d’embûches entre super pouvoirs et trahisons dignes des Borgia. Heureusement, ses amis sont là pour l’accompagner et grandir avec elle. 
-			</p>
 		</div>
-	</section>
+		<div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 princip">  
+			<div class="rouge">
+				<span>auteur: Florent Maudoux</span><br/>
+				<span>Editeur: Ankama</span><br/>
+				<span>Collection: Freaks' Squeele</span><br/>
+				<span>Genre: Bande dessinée (proche du manga)</span>
+				<p>
+					<img src=".\..\Image\freaks_squeele_rouge_tome1.jpg" title="Freaks' Squeele" alt="Rouge">
+
+					<span>Résumé</span>
+					Rouge est la première série issue de l’univers<strong>Freaks’ Squeele</strong>. On y découvre la jeune <strong>Xiong Mao</strong>, alors adolescente, dans un long périple vers l’âge adulte qui l’amènera à affronter ses camarades de classe,<br/>mais aussi ses professeurs. Un chemin semé d’embûches entre super pouvoirs et trahisons dignes des Borgia. Heureusement, ses amis sont là pour l’accompagner et grandir avec elle. 
+				</p>
+			</div>
+		</div/>
+	</div>
+	<footer>FOOOOTER</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 </body>
 </html>

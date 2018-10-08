@@ -12,73 +12,91 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#">Navbar</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brand</a>
+	    </div>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Dropdown
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
-		        </div>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Disabled</a>
-		      </li>
-		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
-		  </div>
-		</nav>
-	 <div class="container-fluid">
-      <div class="row">
-	
-	<nav id="menu">
-	 <div class="row">
-      <div class=" col-xs-12  col-sm-4 col-md-2 col-lg-2 menu">
-          <h3>navigation</h3>
-          <ul>
-				<li><a href=".\..\html\index.html">Acceuil</a></li> 
-				<li><a href=".\..\html\adherent.html">inscrire un adherent</a></li>
-				<li><a href=".\..\html\objet.html">l'empire ecarlate</a></li>
-				<li><a href=""></a></li>
-			</ul>
-		</div> 
-	
-	<div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 princip">   
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="./../html/index.html">Acceuil <span class="sr-only">(current)</span></a></li>
+	        <li><a href="./../html/index.html">Acceuil</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 
-		<div class="masiko">
-			<span>auteur: Florent Maudoux</span><br/>
-			<span>Editeur: Ankama</span><br/>
-			<span>Collection: Label 619</span><br/>
-			<span>Genre: Bande dessinée (proche du manga)</span><br/>
-			<span>Résumé</span>
-			<p><img src=".\..\Image\masiko.jpg" title="Freaks' Squeele" alt="masiko"/>
-					<p >Trois histoires, trois scenario de série Z avec une matrone des triades aussi dangereuse que sexy, des vampires mexicains phallocrates et enfin une biographie mafieuse à même la peau. Trois histoires, une héroïne. À la fois madone à l’enfant et femme-enfant, Masiko fait tout ce qu’elle peut pour élever seule, sa fille <strong>Xiong-Mao (Freaks’ Squeele)</strong>dans un monde de brutes. Heureusement la jeune maman est généreusement équipée pour dézinguer du vilain, dans un grand hommage à la “sex and fury” des années 70.
+	<div class="container-fluid">
+	
+		<div class="row">
+		      <div class=" col-xs-12  col-sm-4 col-md-2 col-lg-2 menu">
+		          <h3>navigation</h3>
+		          <ul>
+						<li><a href=".\..\html\index.html">Acceuil</a></li> 
+						<li><a href=".\..\html\adherent.html">inscrire un adherent</a></li>
+						<li><a href=".\..\html\objet.html">l'empire ecarlate</a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div> 
+			
+			<div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 princip">   
+
+				<div class="masiko">
+					<span>auteur: Florent Maudoux</span><br/>
+					<span>Editeur: Ankama</span><br/>
+					<span>Collection: Label 619</span><br/>
+					<span>Genre: Bande dessinée (proche du manga)</span><br/>
+					<span>Résumé</span>
+					<p><img src=".\..\Image\masiko.jpg" title="Freaks' Squeele" alt="masiko"/>
+							<p >Trois histoires, trois scenario de série Z avec une matrone des triades aussi dangereuse que sexy, des vampires mexicains phallocrates et enfin une biographie mafieuse à même la peau. Trois histoires, une héroïne. À la fois madone à l’enfant et femme-enfant, Masiko fait tout ce qu’elle peut pour élever seule, sa fille <strong>Xiong-Mao (Freaks’ Squeele)</strong>dans un monde de brutes. Heureusement la jeune maman est généreusement équipée pour dézinguer du vilain, dans un grand hommage à la “sex and fury” des années 70.
+							</p>
 					</p>
-			</p>
+				</div>
+			</div/>
 		</div>
-	</div/>
-
-<footer>FOOOOTER</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
-</body>
+    </div>
+	<footer>FOOOOTER</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	</body>
 </html>
