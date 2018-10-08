@@ -2,71 +2,87 @@
 <html lang= "fr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet"  href=".\..\css\style2.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
   <link rel="stylesheet"  href=".\..\css\style1.css" />
+  <link rel="stylesheet"  href=".\..\css\style2.css" />
   <title> STAR WARS :l'empire Ecarlate</title>
 </head>
 
 <body>
-  <nav class="tete_menu">
-    <h1> Mediatheque </h1>
-    <ul>
-      <li><a href=".\..\discoveryManga.html"> Discorevery</a></li>
-      <li>
-        <a href="">MarinFord</a>
-      </li>
-      <li>Recherche<input type="text" name="manga_search" autocomplete="off" spellcheck="false"/><input type="submit" value=""></li>
-    </ul>
-  </nav>
-  <nav id="menu">
-    <div class="element_menu">
-      <h3>navigation</h3>
-      <ul>
-        <li><a href=".\..\html\adherent.html">inscrire un adherent</a></li>
-        <li><a href=".\..\html\index.html">Acceuil</a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </div> 
-  </nav>
-  <section class="princip">   
+  <div class="container-fluid">
+      <div class="row">
+       <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tete_menu">
 
-    <h2>Informations</h2>
-    <h3>type :</h3>
-    <h3>description:</h3>
-    <h3>Langue:</h3>
-    <p>
-      Il n'y a pas de guerriers plus impitoyables que la Garde Impériale,<br />
-      une élite de serviteurs fidèles jusqu'à la mort à l'Empereur. <br/>
-      Lorsque le plus éminent membre choisit de trahir ce dernier, <br />
-      Kir Kanos doit le venger. Il est prêt à tout pour mener à bien<br/>
-      sa mission, même à rejoindre l'Alliance Rebelle... L'Empire <br/>
-      écarlate pour la première fois en intégrale avec, en bonus,<br/>
-      des récits encore jamais parus en album.<br/>
-    </p>
+        <ul>
+          <li><a href=".\..\html\discoveryManga.html"> Discorevery</a></li>
+          <li>
+            <a href="">MarinFord</a>
+          </li>
+          <li>Recherche<input type="text" name="manga_search" autocomplete="off" spellcheck="false"/><input type="submit" value=""></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="row">
+      <div class=" col-xs-12  col-sm-4 col-md-2 col-lg-2 menu">
+          <h3>navigation</h3>
+          <ul>
+            <li><a href=".\..\html\adherent.html">inscrire un adherent</a></li>
+            <li><a href=".\..\html\index.html">Acceuil</a></li>
+            <li><a href=""></a></li>
+          </ul>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 princip">   
 
-    <span>Pour plus d'information:</span>
-    <a href="https://www.editions-delcourt.fr/serie/star-wars-l-empire-ecarlate-integrale.html" title="édition DELACOURT">Star wars - L'Empire Ecarlate (Integrale) chez l'éditeur Delacourt
-    </a><br/>
 
-    <span>Pour l'acheter</span><br/>
-    <iframe src="https://livre.fnac.com/a7705053/Star-Wars-Heritage-L-Empire-perdu-Trahison-Star-Wars-L-Empire-ecarlate-Integrale-Randy-Stradley"></iframe>
-  </section>
-  <br/>
-  <br/>
-  <section>
-    <div>
-     <iframe title="vidéo consacré à star wars-l'empire écarlate"width="560" height="315" src="https://www.youtube.com/embed/Z-cTtaGPcTI"  allow="autoplay; encrypted-media" allowfullscreen>
-     </iframe>
-   </div>
-   <br/>
-   <div>
-    <video width="400" height="222"  src="../videos/SampleVideomb.mp4" >
-      videos
-    </video>
+        <h2>Informations</h2>
+        <span>type :</span>
+        <span>description:</span>
+        <span>Langue:</span>
+        <p>
+          Il n'y a pas de guerriers plus impitoyables que la Garde Impériale,<br />
+          une élite de serviteurs fidèles jusqu'à la mort à l'Empereur. <br/>
+          Lorsque le plus éminent membre choisit de trahir ce dernier, <br />
+          Kir Kanos doit le venger. Il est prêt à tout pour mener à bien<br/>
+          sa mission, même à rejoindre l'Alliance Rebelle... L'Empire <br/>
+          écarlate pour la première fois en intégrale avec, en bonus,<br/>
+          des récits encore jamais parus en album.<br/>
+        </p>
+        <span>Pour plus d'information:</span>
+        <a href="https://www.editions-delcourt.fr/serie/star-wars-l-empire-ecarlate-integrale.html" title="édition DELACOURT">Star wars - L'Empire Ecarlate (Integrale) chez l'éditeur Delacourt
+        </a><br/>
+       
+        <div>
+         <iframe title="vidéo consacré à star wars-l'empire écarlate"width="560" height="315" src="https://www.youtube.com/embed/Z-cTtaGPcTI"  allow="autoplay; encrypted-media" allowfullscreen>
+         </iframe>
+       </div>
+
+      </div>
+    </div>
   </div>
-</section>
-<br/>
-<br/>
 <footer>FOOOOTER</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
+  <!--
+  </div>
+<br/>
+<br/>
+-->
 </html>
+
+<!---
+
+
+
+        <br/>
+        <br/>
+
+       <br/>
+       <div>
+        <video width="400" height="222"  src="../videos/SampleVideomb.mp4" >
+          videos
+        </video>
+        -->

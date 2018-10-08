@@ -6,21 +6,26 @@ body
 	margin:auto;
 	padding:5px;
 	padding-top:0px;
+	
 }
-#menu 
+h1
 {
-	float: left;
-	width: 150px;
-	border: 1px solid black;
-	display: inline-block;
- 
+	justify-content: flex-start;
 }
+
+/*
+
+h1,h2
+{
+	text-align: center;
+}
+
 .princip
 {
-	float : 0;
-	margin-left: 170px;
+   margin-left: 170px;
 	border:1px solid black;
 	justify-content: space-between;
+	text-align:center;
 }
 .newsSorties 
 {
@@ -50,7 +55,7 @@ img
 .element_menu >h3, aside >h3
 {
 	
-	 text-align: center;
+	text-align: center;
 }
 .emprunt
 {
@@ -58,4 +63,4 @@ img
 	margin-right:50%;
 	text-align: center;
 	margin: 0 auto;
-}
+}*/

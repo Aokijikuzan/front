@@ -10,7 +10,7 @@
   <nav class="tete_menu">
     <h1> Mediatheque </h1>
     <ul>
-      <li><a href=".\..\discoveryManga.html"> Discorevery</a></li>
+      <li><a href=".\..\html\discoveryManga.html"> Discorevery</a></li>
       <li>
         <a href="">MarinFord</a>
       </li>
@@ -21,6 +21,7 @@
     <div class="element_menu">
       <h3>navigation</h3>
       <ul>
+        <li><a href=".\..\html\index.html">Acceuil</a></li> 
         <li><a href=".\..\html\adherent.html">inscrire un adherent</a></li>
         <li><a href=".\..\html\objet.html">l'empire ecarlate</a></li>
         <li><a href=""></a></li>
@@ -30,130 +31,137 @@
 
   <h1> Formulaire d'inscription</h1>
   <br/>
-  <form action="" method="post">
-    <div>
-      <label>Entrez le nom :</label>
-      <input type="text" name="nom" id="nom" pattern="[A-Z]" autofocus autocomplete="off" title="le nom doit etre en majuscule"
-      required/>
-    </div>
+  <section class="princip">
     <br/>
-    <br/>
-    <div>
-      <label>Entrez le prénom:</label>
-      <input type="text" name="prenom" id="prenom"  autocomplete="off" 
-      title="le prenom doit etre en majuscule"
-      required/>
-    </div>
-    <br/>
-    <br/>
-    <div>
-      <label>Entrez la date de naissance:</label>
-      <input type="date" id="naissance" name="naissance"
-      value="1991-07-22"
-      min="1950-01-01" max="2999-12-31" required/>
-    </div>
-    <br/>
-    <br/>
-    <hr>
-    <div>
-      <label>Entrez l'adresse mail:</label>
-      <input type="email" name="mail" id="mail" 
-      pattern=".+@+."
-      required/>
-    </div>
-    <br/>
-    <br/>
-    <hr>
-    <div>
-      <label>Entrez le numero de téléphone:</label>
-      <input type="tel" id="phone" name="phone"
-      placeholder="06 31 35 58 65"
-      pattern="[0-9]{10}"
-      required />
-    </div>
-    <div>
-      <p>Choisissez la préférence de contact :</p>
+    <form action="" method="post">
+        <h2>Informations Personnelles</h2>
       <div>
-        <input type="radio" name="phone" value="phone">
-        <label for="phone">téléphone</label>
+        <label>Entrez le nom :</label>
+        <input type="text" name="nom" id="nom" pattern="[A-Z]" autofocus autocomplete="off" title="le nom doit etre en majuscule"
+        required/>
       </div>
-      <div>
-       <input type="radio" name="mail" value="mail">
-       <label for="mail">adresse mail</label>
-     </div>
-
-     <div>
-      <label>Choisissez le ou les service(s) à souscrire:</label>
       <br/>
+      <br/>
+      <div>
+        <label>Entrez le prénom:</label>
+        <input type="text" name="prenom" id="prenom"  autocomplete="off" 
+        title="le prenom doit etre en majuscule"
+        required/>
+      </div>
+      <br/>
+      <br/>
+      <div>
+        <label>Entrez la date de naissance:</label>
+        <input type="date" id="naissance" name="naissance"
+        value="1991-07-22"
+        min="1950-01-01" max="2999-12-31" required/>
+      </div>
+      <br/>
+      <br/>
+     <hr/>
+     <H2>Contact</H2>
+      <div>
+        <label>Entrez l'adresse mail:</label>
+        <input type="email" name="mail" id="mail" 
+        pattern=".+@+."
+        required/>
+      </div>
+      <br/>
+      <br/>
+    
+      <div>
+        <label>Entrez le numero de téléphone:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="06 31 35 58 65"
+        pattern="[0-9]{10}"
+        required />
+      </div>
+      <div>
+        <p>Choisissez la préférence de contact :</p>
+        <div>
+          <input type="radio" name="phone" value="phone">
+          <label for="phone">téléphone</label>
+        </div>
+        <div>
+         <input type="radio" name="mail" value="mail">
+         <label for="mail">adresse mail</label>
+       </div>
+       <hr/>
+       <h2>Services Et autres</h2>
+       <div>
+        <label>Choisissez le ou les service(s) à souscrire:</label>
+        <br/>
+
+        <div>
+          <input type="checkbox" id="service" name="service"
+          value ="services" checked/>
+          <label for="animations">Animation</label>
+        </div>
+        <div>
+          <input type="checkbox" id="service" name="service"
+          value ="services" />
+          <label for="spectacle">Spectacles</label>
+        </div>
+        <div>
+          <input type="checkbox" id="service" name="service"
+          value ="services" />
+          <label for="emprunt_illimite">Emprunt illimités</label>
+        </div>
+      </div>
+      <br/>
+   
 
       <div>
-        <input type="checkbox" id="service" name="service"
-        value ="services" checked/>
-        <label for="animations">Animation</label>
+        <label>Entrer le code parrain  :</label>
+        <input type="text" name="code" pattern="[0-9]" />
       </div>
+      <br/>
+      <br/>
+      <label>Pays</label>:
+      <select required>
+        <optgroup label="Europe" selected="selected">
+          <option>Fance</option>
+          <option>Suisse</option>
+          <option>Belgique</option>
+          <option>Espagne</option>
+        </optgroup>
+        <optgroup label="Afrique">
+          <option>Côte d'ivoire</option>
+          <option>Burkina faso</option>
+          <option>Sénégal</option>
+          <option>Bénin</option>
+        </optgroup>
+        <optgroup label="Amérique">
+          <option>USA</option>
+          <option>Bresil</option>
+          <option>Canada</option>
+          <option>Perou</option>
+        </optgroup>
+        <optgroup label="Asie">
+          <option>Chine</option>
+          <option>Japon</option>
+          <option>Vietnam</option>
+          <option>Corée du sud</option>
+        </optgroup>
+        <optgroup label="Océanie">
+          <option>Australie</option>
+          <option>New Zeland</option>
+          <option>Papouasiee</option>
+          <option></option>
+        </optgroup>
+      </select>
+      <br/>
+      <br/>
       <div>
-        <input type="checkbox" id="service" name="service"
-        value ="services" />
-        <label for="spectacle">Spectacles</label>
+        <label>VIP  :</label>
+        <input type="text" name="vip" placeholder="false" />
       </div>
-      <div>
-        <input type="checkbox" id="service" name="service"
-        value ="services" />
-        <label for="emprunt_illimite">Emprunt illimités</label>
-      </div>
-    </div>
-    <br/>
-    <hr>
-
-    <div>
-      <label>Entrer le code parrain  :</label>
-      <input type="text" name="code" pattern="[0-9]" />
-    </div>
-    <br/>
-    <br/>
-    <label>Pays</label>:
-    <select required>
-      <optgroup label="Europe" selected="selected">
-        <option>Fance</option>
-        <option>Suisse</option>
-        <option>Belgique</option>
-        <option>Espagne</option>
-      </optgroup>
-      <optgroup label="Afrique">
-        <option>Côte d'ivoire</option>
-        <option>Burkina faso</option>
-        <option>Sénégal</option>
-        <option>Bénin</option>
-      </optgroup>
-      <optgroup label="Amérique">
-        <option>USA</option>
-        <option>Bresil</option>
-        <option>Canada</option>
-        <option>Perou</option>
-      </optgroup>
-      <optgroup label="Asie">
-        <option>Chine</option>
-        <option>Japon</option>
-        <option>Vietnam</option>
-        <option>Corée du sud</option>
-      </optgroup>
-      <optgroup label="Océanie">
-        <option>Australie</option>
-        <option>New Zeland</option>
-        <option>Papouasiee</option>
-        <option></option>
-      </optgroup>
-    </select>
-    <br/>
-    <br/>
-    <div>
-      <label>VIP  :</label>
-      <input type="text" name="vip" placeholder="false" />
-    </div>
-    <br/>
-    <br/>
-    <input type="submit" name="envoyer">
-  </form>
+      <br/>
+      <br/>
+      <input type="submit" name="envoyer">
+    </form>
+      <br/>
+  </section>
   <footer>
     FOOOOTERR
   </footer>
