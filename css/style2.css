@@ -45,7 +45,13 @@ footer
 	color:yellow;
 	text-align: center;
 }
+.sec1, .sec2 , .sec3 , .sec4
+{
+	
+	justify-content: space-between;
+}
 /*
+	
 .one_piece
 {
 	float:left;
@@ -61,13 +67,6 @@ footer
 .masiko >p
 {
 	justify-content: center;
-}
-.sec1, .sec2 , .sec3 , .sec4
-{
-	
-	margin-left: 170px;
-	
-	justify-content: space-between;
 }
 .sec4
 {

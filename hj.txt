@@ -1,0 +1,49 @@
+h1,h2
+{
+	text-align: center;
+}
+
+.princip
+{
+   margin-left: 170px;
+	border:1px solid black;
+	justify-content: space-between;
+	text-align:center;
+}
+.newsSorties 
+{
+	display: flex;
+	text-align: center;
+	clear: both;
+	justify-content: space-around;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+img
+{
+	max-width: 100%;
+}
+.newsSorties > div > p
+{
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+
+.element_menu >h3, aside >h3
+{
+	
+	text-align: center;
+}
+.emprunt
+{
+
+	margin-right:50%;
+	text-align: center;
+	margin: 0 auto;
+}
