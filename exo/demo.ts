@@ -94,7 +94,7 @@ let puissance=(x:number , p?:number) =>
     {
         aire : () => number;
     }
-    class Rectangle implements Figure
+    class Rectangles implements Figure
     {
         largeur: number;
         longueur: number;
@@ -108,7 +108,7 @@ let puissance=(x:number , p?:number) =>
             return this.largeur * this.longueur;
         }
     }
-    class Carre extends Rectangle
+    class Carres extends Rectangle
     {
         constructor(cote: number)
         {
