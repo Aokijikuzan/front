@@ -115,3 +115,4 @@ myUnionVar =5;
 console.log('typeof myUnionVar='+ typeof myUnionVar);
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 let p0: number | number[];
+let tmp1= typeof p0;

@@ -1,3 +1,16 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var et = 1;
 var r = 1.2;
 console.log('entier ' + et);
@@ -61,3 +74,44 @@ var sommeLambda = function (x) {
     return autre.reduce(function (s, e) { return s += e; }) + x;
 };
 console.log(sommeLambda(1, 2, 3, 9, 8));
+//Objet à la vollée
+var totoObject = {
+    nom: 'toto',
+    prenom: 'titi',
+    affiche: function () {
+        console.log('je m\'appelle ' + this.prenom);
+    }
+};
+// import {Rezctangle} from './demo.ts'
+var Personne = /** @class */ (function () {
+    function Personne(nom, prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+    Personne.prototype.affiche = function () {
+        console.log(this.nom + " " + this.prenom);
+    };
+    return Personne;
+}());
+var mickey = new Personne('mickey', 'mouse');
+totoObject.affiche();
+mickey.affiche();
+var Rectangle = /** @class */ (function () {
+    function Rectangle(largeur, longueur) {
+        this.largeur = largeur;
+        this.longueur = longueur;
+    }
+    Rectangle.prototype.aire = function () {
+        return this.largeur * this.longueur;
+    };
+    return Rectangle;
+}());
+var Carre = /** @class */ (function (_super) {
+    __extends(Carre, _super);
+    function Carre(cote) {
+        return _super.call(this, cote, cote) || this;
+    }
+    return Carre;
+}(Rectangle));
+var _a = [0, 9], d = _a[0], g = _a[1], autres = _a.slice(2);
+console.log('d= ' + d + ' et g = ' + g + 'vet autres = ' + autres);

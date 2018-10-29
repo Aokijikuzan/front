@@ -60,3 +60,60 @@ let puissance=(x:number , p?:number) =>
     let sommeLambda=(x:number,...autre:number[]) =>
     autre.reduce((s,e)=>s+=e) +x ;
     console.log(sommeLambda(1,2,3,9,8));
+
+    //Objet à la vollée
+    let totoObject=
+    {
+        nom:'toto',
+        prenom:'titi',
+        affiche: function()
+        {
+            console.log('je m\'appelle '+this.prenom);
+        }
+    }
+// import {Rezctangle} from './demo.ts'
+    class Personne
+    {
+        nom: string;
+        prenom:string;
+        constructor(nom:string, prenom:string)
+        {
+            this.nom=nom;
+            this.prenom=prenom;
+        }
+        affiche():void
+        {
+            console.log ( `${this.nom} ${this.prenom}`);
+        }
+    }
+    let mickey = new Personne('mickey', 'mouse');
+    totoObject.affiche();
+    mickey.affiche();
+
+    interface Figure
+    {
+        aire : () => number;
+    }
+    class Rectangle implements Figure
+    {
+        largeur: number;
+        longueur: number;
+        constructor(largeur: number, longueur: number)
+        {
+            this.largeur = largeur;
+            this.longueur= longueur;
+        }
+        aire() : number
+        {
+            return this.largeur * this.longueur;
+        }
+    }
+    class Carre extends Rectangle
+    {
+        constructor(cote: number)
+        {
+            super(cote,cote);
+        }
+    }
+    let [d, g, ...autres]= [0,9];
+    console.log('d= '+d+ ' et g = '+ g+'vet autres = '+ autres);
