@@ -98,3 +98,41 @@ var myUnionVar;
 console.log('UnionVar before setting a value =' + myUnionVar);
 myUnionVar = 5;
 console.log('typeof myUnionVar=' + typeof myUnionVar);
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+var p0;
+var tmp1 = typeof p0;
+if (tmp1 === 'number') {
+    console.log('ok');
+}
+/*
+switch (tmp1)
+{
+    case 'number':
+    console.log('ok cest number'); break;
+    case
+}
+*/
+console.log('----------------------------------------------');
+console.log('exercice 10');
+function addition2nb(numb1, numb2) {
+    var res = numb1 + numb2;
+    return res;
+}
+var adddition2nb0 = function (x, y) { return x + y; };
+var result2 = addition2nb(4, 2);
+console.log('addition de 2 nb : ' + result2);
+var result2Anonym = adddition2nb0(4, 2);
+console.log('addition anonyme de 2 nb' + result2Anonym);
+var arrow = function (x1, y1) { return x1 + y1; };
+var resultLambda = arrow(2, 4);
+console.log('addition de 2 nb(fct en lambda):' + resultLambda);
+console.log('----------------------------------------------');
+console.log('exercice 3');
+var Personne = {
+    nom: 'kuzan',
+    prenom: 'Aokiji',
+    dateNaissance: '12/12/2001',
+    nomComplet: function () { return 'nomComplet : ' + this.nom + ' ' + this.prenom; }
+};
+var rr = Personne.nomComplet();
+console.log(rr);

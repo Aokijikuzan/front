@@ -114,5 +114,70 @@ console.log('UnionVar before setting a value =' + myUnionVar);
 myUnionVar =5;
 console.log('typeof myUnionVar='+ typeof myUnionVar);
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-let p0: number | number[];
+let p0: number | any[];
 let tmp1= typeof p0;
+if (tmp1=== 'number')
+{
+    console.log('ok');
+}
+/*
+switch (tmp1)
+{
+    case 'number':
+    console.log('ok cest number'); break;
+    case 
+}
+*/
+console.log('----------------------------------------------');
+console.log('exercice 10');
+function addition2nb(numb1:number , numb2:number): number
+{
+    let res=numb1+numb2;
+    return res;
+}
+let adddition2nb0 = function(x:number,y:number){ return x+y ;};
+let result2=addition2nb(4,2);
+console.log('addition de 2 nb : '+result2);
+let result2Anonym=adddition2nb0(4,2);
+console.log('addition anonyme de 2 nb'+result2Anonym);
+
+
+let arrow= (x1:number,y1:number) =>x1+y1;
+let resultLambda=arrow(2,4);
+console.log('addition de 2 nb(fct en lambda):'+resultLambda);
+console.log('----------------------------------------------');
+console.log('exercice 3 et 4');
+/*
+
+let Personne=
+{
+    nom:'kuzan',
+    prenom:'Aokiji',
+    dateNaissance:'12/12/2001',
+    nomComplet: function():string {return 'nomComplet : '+ this.nom+' '+ this.prenom }
+}
+let rr=Personne.nomComplet();
+console.log(rr);
+*/
+ class Personne
+ {
+    nom:string;
+    prenom:string;
+    dateNaissance:string;
+    constructor(nom:string, prenom:string, dateNaisance:string)
+    {
+        this.nom=nom;
+        this.prenom=prenom;
+        this.dateNaissance=dateNaisance;
+    }
+    affiche():void
+    {
+        console.log ( `${this.nom} ${this.prenom} ${this.dateNaissance}`);
+    }
+ }
+ console.log('----------------------------------------------');
+ console.log('exercice 5');
+ interface Surface2D
+ {
+      let arrowAire=(x1:number,y1:number)=>number;
+ }

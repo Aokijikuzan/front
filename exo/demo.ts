@@ -72,7 +72,7 @@ let puissance=(x:number , p?:number) =>
         }
     }
 // import {Rezctangle} from './demo.ts'
-    class Personne
+    class Personnes
     {
         nom: string;
         prenom:string;
@@ -86,7 +86,7 @@ let puissance=(x:number , p?:number) =>
             console.log ( `${this.nom} ${this.prenom}`);
         }
     }
-    let mickey = new Personne('mickey', 'mouse');
+    let mickey = new Personnes('mickey', 'mouse');
     totoObject.affiche();
     mickey.affiche();
 
