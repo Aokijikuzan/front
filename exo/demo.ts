@@ -108,7 +108,7 @@ let puissance=(x:number , p?:number) =>
             return this.largeur * this.longueur;
         }
     }
-    class Carres extends Rectangle
+    class Carres extends Rectangles
     {
         constructor(cote: number)
         {

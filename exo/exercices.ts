@@ -179,5 +179,24 @@ console.log(rr);
  console.log('exercice 5');
  interface Surface2D
  {
-      let arrowAire=(x1:number,y1:number)=>number;
+      aireArrow: (x1:number,y1:number)=>number;
+        perimetreArrow: (x1:number,y1:number)=>number;
+ }
+ class Rectangle implements Surface2D
+ {
+     largeur:number;
+     longueur:number;
+     constructor(largeur: number , longueur: number)
+     {
+        this.largeur = largeur;
+        this.longueur= longueur; 
+     }
+     aireArrow (x1:number ,y1:number):number
+     {
+         return 0;
+     }
+     perimetreArrow (x1:number ,y1:number):number
+     {
+         return 0;
+     }
  }
