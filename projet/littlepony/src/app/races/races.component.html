@@ -1,4 +1,5 @@
-<ul>
+<p *ngIf="races.length== 0">Pas de course actuellement</p>
+<ul *ngIf= "races.length >0">
     <li *ngFor="let r of races">
 
       <app-race-details [race]="r"></app-race-details>
