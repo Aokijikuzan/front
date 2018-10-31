@@ -19,6 +19,7 @@ const routes : Routes =
 [
   {path:'',component:RacesComponent},
   {path:'Ponies',component:PoniesComponent},
+  {path:'Races', component:RacesComponent},
   {path:'addPony',component:PonyFormComponent},
   {path:'addRace',component:RaceFormComponent}
 ];

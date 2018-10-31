@@ -1,6 +1,8 @@
 <h1>Entrer une new course</h1>
-
+<!--SI ON USE UN SELECT CEST QUON A FAUX-->
+<!--tout les poney ajouté doivent appartaitre et on doit  les choisir ne pas use de checkbox-->
 <form (ngSubmit)="onSubmit()">
+ 
   location<input type="text" id="location" name="location" required [(ngModel)]="course.location"/>
   <br/>
   date <input type="date" id="date" name="date" required [(ngModel)]="course.date"/>
