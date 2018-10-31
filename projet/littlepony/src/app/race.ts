@@ -8,7 +8,7 @@ export class Race {
     location: string;
     date:Date;
    
-    constructor(location:string, date:Date)
+    constructor(location?:string, date?:Date)
     {
         this.id=0;
         this.ponies= [];

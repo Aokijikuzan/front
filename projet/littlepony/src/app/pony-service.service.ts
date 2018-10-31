@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Pony } from './pony';
 import { PONIES }from './ponies-mock';
 import { Observable,of } from 'rxjs';
+import { checkAndUpdatePureExpressionDynamic } from '@angular/core/src/view/pure_expression';
 @Injectable({
   providedIn: 'root'
 })
@@ -16,5 +17,10 @@ ponies:Array<Pony>;
   {
     return of(this.ponies);
    
+  }
+
+  addPony(pony: Pony):void
+  {
+  this.ponies.push(pony);
   }
 }

@@ -1,0 +1,14 @@
+<h1>Entrer une new course</h1>
+
+<form (ngSubmit)="onSubmit()">
+  location<input type="text" id="location" name="location" required [(ngModel)]="course.location"/>
+  <br/>
+  date <input type="date" id="date" name="date" required [(ngModel)]="course.date"/>
+  <br/>
+  <!--
+  Weight<input type="text" id="weight" name="weight" required [(ngModel)]="model.weight"/>
+  <br/>
+  -->
+  <button type="submit">Enregistrer</button>
+
+</form>

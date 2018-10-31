@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Race } from './race';
 import { RACES } from './races-mock';
 import { Observable,of } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,5 +17,9 @@ races:Array<Race>;
   {
     return of(this.races);
    
+  }
+  addRace(race:Race):void
+  {
+  this.races.push(race);
   }
 }
