@@ -1,3 +1,4 @@
+import{ Promise } from 'es6-promise';
 let et : number =1;
 let r: number=1.2;
 
@@ -117,3 +118,45 @@ let puissance=(x:number , p?:number) =>
     }
     let [d, g, ...autres]= [0,9];
     console.log('d= '+d+ ' et g = '+ g+'vet autres = '+ autres);
+
+    console.log('------------------------------------------------------------------------------------');
+
+function hello(onBefore, onAfter)
+{
+    if(onBefore)
+    {
+        onBefore();
+
+    }
+    console.log('hello');
+    if(onAfter)
+    {
+        onAfter();
+    }
+}//ordonancer lappel de sa focntion dans une foonction en asynchrone:cest une promise
+hello(()=> console.log('avant') ,()=> console.log('apres'));
+
+function doAsyncTask(cb) 
+{
+    setTimeout ( ()=> {
+    console.log('Asyn Task callinng Callback');
+    cb();
+    },1000);
+}
+doAsyncTask( ()=>console.log("callback Called") );
+console.log('toto');
+
+var prom= new Promise(function(resolve,reject)
+{
+    resolve('Bravo');
+});
+prom.then( (value) => console.log(value)).catch((err)=>console.log(err));
+/*Ecrire une fonction testNUm qui prend en param un nombre et  
+qui retourne une Promise qui test si le param est plus grand que 10
+*/
+
+/*Créer et use des Promises pour trier un tableau dez string et
+ l'afficher en majuscule.
+Si le tableau ne contient pas que des  string, on rejecte la Promise.
+*/
+

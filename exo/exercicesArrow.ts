@@ -29,7 +29,7 @@ class Persone
  }
  let p1= new Persone('bond','james');
  let p2= new Persone('larson','nicky');
- let p3= new Persone('quentin','jacquin');
+ let p3= new Persone('jacquin','quentin');
  
  let listPersonne:Persone[]=[];
 let orderByNom=(e1:Persone,e2:Persone) =>(e1.nom<e2.nom) ? -1 :(e1.nom>e2.nom) ? 1 :0;
@@ -47,6 +47,16 @@ let orderByPrenom=(e1:Persone,e2:Persone) =>(e1.prenom<e2.prenom) ? -1 :(e1.pren
  console.log('-------------------------------------------------------------------------');
 
  console.log('--------------------------------affiche les noms------------------------');
- 
- let affich=(e:Persone) => e.nom;
- console.log(listPersonne.filter(affich));
+ let affichNom=(e:Persone) => e.nom;
+ console.log(listPersonne.map(affichNom));
+ console.log('-------------------------------------------------------------------------');
+
+ console.log('----------affiche les noms maj et le prenom des personne trié en decroissant------------------------');
+let orderDecroissant=(e1:Persone,e2:Persone) =>(e1.nom<e2.nom) ? 1 :(e1.nom>e2.nom) ? -1 :0;
+let nomMaj=(e:Persone) => (e.nom).toUpperCase();
+let nomMaj1= listPersonne.forEach(element =>{
+    element.nom=element.nom.toUpperCase;
+})
+//console.log(listPersonne.sort(orderDecroissant));
+
+

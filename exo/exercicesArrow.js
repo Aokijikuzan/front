@@ -22,7 +22,7 @@ var Persone = /** @class */ (function () {
 }());
 var p1 = new Persone('bond', 'james');
 var p2 = new Persone('larson', 'nicky');
-var p3 = new Persone('quentin', 'jacquin');
+var p3 = new Persone('jacquin', 'quentin');
 var listPersonne = [];
 var orderByNom = function (e1, e2) { return (e1.nom < e2.nom) ? -1 : (e1.nom > e2.nom) ? 1 : 0; };
 var orderByPrenom = function (e1, e2) { return (e1.prenom < e2.prenom) ? -1 : (e1.prenom > e2.prenom) ? 1 : 0; };
@@ -37,5 +37,12 @@ console.log('---------------------------------Par prenom------------------------
 console.log(listPersonne.sort(orderByPrenom));
 console.log('-------------------------------------------------------------------------');
 console.log('--------------------------------affiche les noms------------------------');
-var affich = function (e) { return e.nom; };
-console.log(listPersonne.filter(affich));
+var affichNom = function (e) { return e.nom; };
+console.log(listPersonne.map(affichNom));
+console.log('-------------------------------------------------------------------------');
+console.log('----------affiche les noms maj et le prenom des personne trié en decroissant------------------------');
+var orderDecroissant = function (e1, e2) { return (e1.nom < e2.nom) ? 1 : (e1.nom > e2.nom) ? -1 : 0; };
+var nomMaj = function (e) { return (e.nom).toUpperCase(); };
+var nomMaj1 = listPersonne.toLocaleString;
+//console.log(listPersonne.sort(orderDecroissant));
+console.log(nomMaj1);

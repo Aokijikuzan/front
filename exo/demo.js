@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,6 +12,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+exports.__esModule = true;
+var es6_promise_1 = require("es6-promise");
 var et = 1;
 var r = 1.2;
 console.log('entier ' + et);
@@ -83,35 +86,58 @@ var totoObject = {
     }
 };
 // import {Rezctangle} from './demo.ts'
-var Personne = /** @class */ (function () {
-    function Personne(nom, prenom) {
+var Personnes = /** @class */ (function () {
+    function Personnes(nom, prenom) {
         this.nom = nom;
         this.prenom = prenom;
     }
-    Personne.prototype.affiche = function () {
+    Personnes.prototype.affiche = function () {
         console.log(this.nom + " " + this.prenom);
     };
-    return Personne;
+    return Personnes;
 }());
-var mickey = new Personne('mickey', 'mouse');
+var mickey = new Personnes('mickey', 'mouse');
 totoObject.affiche();
 mickey.affiche();
-var Rectangle = /** @class */ (function () {
-    function Rectangle(largeur, longueur) {
+var Rectangles = /** @class */ (function () {
+    function Rectangles(largeur, longueur) {
         this.largeur = largeur;
         this.longueur = longueur;
     }
-    Rectangle.prototype.aire = function () {
+    Rectangles.prototype.aire = function () {
         return this.largeur * this.longueur;
     };
-    return Rectangle;
+    return Rectangles;
 }());
-var Carre = /** @class */ (function (_super) {
-    __extends(Carre, _super);
-    function Carre(cote) {
+var Carres = /** @class */ (function (_super) {
+    __extends(Carres, _super);
+    function Carres(cote) {
         return _super.call(this, cote, cote) || this;
     }
-    return Carre;
-}(Rectangle));
+    return Carres;
+}(Rectangles));
 var _a = [0, 9], d = _a[0], g = _a[1], autres = _a.slice(2);
 console.log('d= ' + d + ' et g = ' + g + 'vet autres = ' + autres);
+console.log('------------------------------------------------------------------------------------');
+function hello(onBefore, onAfter) {
+    if (onBefore) {
+        onBefore();
+    }
+    console.log('hello');
+    if (onAfter) {
+        onAfter();
+    }
+} //ordonancer lappel de sa focntion dans une foonction en asynchrone:cest une promise
+hello(function () { return console.log('avant'); }, function () { return console.log('apres'); });
+function doAsyncTask(cb) {
+    setTimeout(function () {
+        console.log('Asyn Task callinng Callback');
+        cb();
+    }, 1000);
+}
+doAsyncTask(function () { return console.log("callback Called"); });
+console.log('toto');
+var prom = new es6_promise_1.Promise(function (resolve, rejetc) {
+    resolve('Bravo');
+});
+prom.then(function (value) { return console.log(value); })["catch"](function (err) { return console.log(err); });
