@@ -18,13 +18,16 @@ import { RaceFormComponent } from './race-form/race-form.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {PickListModule} from 'primeng/picklist';
 
+import{ReactiveFormsModule} from  '@angular/forms';
+import { PoneyReactiveFormComponent } from './poney-reactive-form/poney-reactive-form.component';
 const routes : Routes =
 [
   {path:'',component:RacesComponent},
   {path:'Ponies',component:PoniesComponent},
   {path:'Races', component:RacesComponent},
   {path:'addPony',component:PonyFormComponent},
-  {path:'addRace',component:RaceFormComponent}
+  {path:'addRace',component:RaceFormComponent},
+  {path:'addPonyRF', component: PoneyReactiveFormComponent}
 ];
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ const routes : Routes =
     RaceDetailsComponent,
     RacesComponent,
     PonyFormComponent,
-    RaceFormComponent
+    RaceFormComponent,
+    PoneyReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ const routes : Routes =
     RouterModule.forRoot(routes),
     FormsModule,
     NgbModule,
-    PickListModule
+    PickListModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -33,7 +33,7 @@ export class RaceFormComponent implements OnInit {
   onSubmit()
   {
     this.raceService.addRace(this.model);
-   console.log(this.model);
+ 
     let concurrentsponies=this.raceService.getAllRaces;
     this.model.date = new Date(this.dateModel.year, this.dateModel.month, this.dateModel.day);
     //this.router.navigate( ['/Ponies'] );

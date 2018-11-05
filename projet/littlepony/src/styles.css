@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body
 {
-    background: linear-gradient(70deg, blue, pink);
+    background: linear-gradient(70deg,  #cc0066 ,#33ccff);
+}
+
+h1
+{
+ text-align: center;
 }
