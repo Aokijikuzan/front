@@ -3,17 +3,27 @@ import { Race } from './../race';
 import { RaceService} from './../race.service';
 import {Router } from '@angular/router';
 import { Pony } from '../pony';
+import { PonyServiceService } from '../pony-service.service';
+import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-race-form',
   templateUrl: './race-form.component.html',
   styleUrls: ['./race-form.component.css']
 })
 export class RaceFormComponent implements OnInit {
-  course: Race;
-  concurrents:Array<Pony>;
-  constructor(private service:RaceService, private router:Router) 
+  model: Race;//course correspond à model
+  ponies:Array<Pony>;
+  dateModel: NgbDateStruct;
+
+  constructor(private raceService:RaceService, private router:Router,
+    private poneyService: PonyServiceService, private calendar: NgbCalendar) 
   {
-    this.course= new Race();
+    this.model= new Race();
+    this.poneyService.getAllPonies().subscribe(p=> this.ponies=p);
+    
+    this.dateModel=this.calendar.getToday();
+   
+  
   
   }
  
@@ -22,9 +32,12 @@ export class RaceFormComponent implements OnInit {
 
   onSubmit()
   {
-    this.service.addRace(this.course);
-    let concurrents=this.service.getAllRaces;
+    this.raceService.addRace(this.model);
+   console.log(this.model);
+    let concurrentsponies=this.raceService.getAllRaces;
+    this.model.date = new Date(this.dateModel.year, this.dateModel.month, this.dateModel.day);
     //this.router.navigate( ['/Ponies'] );
+   
     this.router.navigate( ['/Races'] );
   }
 

@@ -15,6 +15,9 @@ import {RouterModule, Routes } from  '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { RaceFormComponent } from './race-form/race-form.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {PickListModule} from 'primeng/picklist';
+
 const routes : Routes =
 [
   {path:'',component:RacesComponent},
@@ -37,7 +40,9 @@ const routes : Routes =
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    NgbModule,
+    PickListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

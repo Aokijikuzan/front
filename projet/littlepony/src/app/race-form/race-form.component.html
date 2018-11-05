@@ -3,14 +3,20 @@
 <!--tout les poney ajouté doivent appartaitre et on doit  les choisir ne pas use de checkbox-->
 <form (ngSubmit)="onSubmit()">
  
-  location<input type="text" id="location" name="location" required [(ngModel)]="course.location"/>
+  localisation<input type="text" id="location" name="location" required [(ngModel)]="model.location"/>
   <br/>
-  date <input type="date" id="date" name="date" required [(ngModel)]="course.date"/>
+  date<ngb-datepicker #dp [(ngModel)]="dateModel" [ngModelOptions]="{standalone:true}"></ngb-datepicker>
+    <p-pickList [source]="ponies" [target]="model.ponies" [responsive]="true" dragdrop="true" dragdropScope="ponies">
+    
+        <ng-template let-pony pTemplate="item">
+            <div class="ui-helper-clearfix">
+                {{pony.name}}
+            </div>
+        </ng-template>
+    </p-pickList>
+
   <br/>
-  <!--
-  Weight<input type="text" id="weight" name="weight" required [(ngModel)]="model.weight"/>
-  <br/>
-  -->
+  
   <button type="submit">Enregistrer</button>
 
 </form>

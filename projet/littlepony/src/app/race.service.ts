@@ -3,13 +3,14 @@ import { Race } from './race';
 import { RACES } from './races-mock';
 import { Observable,of } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class RaceService {
 races:Array<Race>;
   constructor() {
-    this.races= [];
+    
     this.races=RACES;
    }
 
